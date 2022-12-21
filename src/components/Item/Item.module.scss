@@ -1,0 +1,109 @@
+.item {
+    background: linear-gradient(white 53%, transparent 47%);
+    border-radius: 10px;
+    display: flex;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.08));
+    flex-direction: column;
+    // overflow: hidden;
+    width: 365px;
+    text-align: center;
+    
+    &-descricao {
+      background-color: #EFF9FF;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+    }
+    &-titulo {
+      padding: 16px 5px 0 5px;
+      
+      h2 {
+        color: #Ff7102  ;
+        font-size: 19px;
+        
+      }
+      p {
+        
+        font-size: 14px;
+        color: #444;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    }
+  
+    &-imagem {
+      margin: 0 auto;
+    }
+  
+    &-info {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    &-preco {
+      align-items: center;
+      background-color: #Ff7102;
+      color: white;
+      display: flex;
+      font-size: 20px;
+      height: 45px;
+      justify-content: center;
+      width: 170px;
+    }
+    &-acoes {
+      align-items: center;
+      display: flex;
+      flex: 1;
+      justify-content: space-evenly;
+    }
+  
+    &-acao {
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+}
+
+.itemNoCarrinho {
+  width: 40%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  .quantidade {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    svg {
+      cursor: pointer;
+    }
+  }
+  .item-acoes {
+    gap: 50px;
+    justify-content: flex-end;
+    padding: 0 50px;
+  }
+}
+
+
+
+.btnsaiba{
+    margin-bottom: 9px;
+    align-items: center;
+    border-style: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #Ff7102;
+}
+   
+.btnsaiba:hover{
+     color: #b86220;
+}
+.btnsaiba:active{
+     color: #444;
+}

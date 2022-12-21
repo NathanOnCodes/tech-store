@@ -1,0 +1,32 @@
+@import 'styles/breakpoints';
+
+.footer {
+  align-items: center;
+  background-image: url('../../assets/fundo-footer--azul.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 50px;
+  width: 100%;
+  div {
+    display: flex;
+    gap: 50px;
+  }
+  span {
+    color: white;
+    font-size: 24px;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    @media(max-width: $tablet) {
+      font-size: 20px;
+    }
+    @media(max-width: $mobile-sm) {
+      font-size: 16px;
+    }
+  }
+ 
+}
